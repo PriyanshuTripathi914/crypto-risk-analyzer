@@ -11,7 +11,7 @@ const [data,setData]=useState(null)
 const fetchData=async () => {
 
 const res=await axios.get(
-`http://localhost:5000/crypto/${coin}`
+`https://stock-risk-backend.onrender.com/crypto/${coin}`
 )
 
 setData(res.data)
